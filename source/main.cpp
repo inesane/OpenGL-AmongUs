@@ -296,7 +296,7 @@ void initGL(GLFWwindow *window, int width, int height)
 
     maze1 = Maze(0, 0, COLOR_ORANGE);
     player1 = Player(0, 0, COLOR_GREEN);
-    imposter1 = Player(n - 1, n - 1, COLOR_RED);
+    imposter1 = Player(rand() % (n/2) + (n-1)/2, rand() % (n/2) + (n-1)/2, COLOR_RED);
     button1 = Button(rand() % (n - 1) + 1, rand() % (n - 1) + 1, COLOR_RED);
     button2 = Button(rand() % (n - 1) + 1, rand() % (n - 1) + 1, COLOR_GREEN);
     coin1 = Button(rand() % (n - 1) + 1, rand() % (n - 1) + 1, COLOR_YELLOW);
