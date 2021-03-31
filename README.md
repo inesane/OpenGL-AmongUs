@@ -20,7 +20,11 @@ This is a version of AmongUs created using OpenGL. You are a green coloured char
 
 # Controls
 w - move character up
-a - move character left
-s - move character down
+
+a - move character left  
+
+s - move character down 
+
 d - move character right
+
 q - quit the game
