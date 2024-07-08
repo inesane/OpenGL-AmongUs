@@ -1,11 +1,15 @@
+# AmongUs Game with OpenGL
+
+This is a version of AmongUs created using OpenGL.
+
 ## OpenGL installation
 
-```
+```bash
 sudo apt - get update
 sudo apt - get install libglu1 - mesa - dev freeglut3 - dev mesa - common - dev
 ```
 
-# To Run
+## To Run
 
 ```
 mkdir build
@@ -15,16 +19,30 @@ make
 ./Hello-World
 ```
 
-# Game
-This is a version of AmongUs created using OpenGL. You are a green coloured character. There is a red coloured character who is the imposter. The imposter uses a shortest path algorithm (Bellman Ford) and moves towards you. There is a button of the same colour as the imposter. If you touch the button, the imposter dies but if the imposter touches you before you touch the button, you lose the game. There is also another button that spawns 2 coins and 2 bombs upon touching the button. If you collect a coin, your score increases by 10. If you touch a bomb, your score decreases by 10. After touching the 2 buttons, one part of the maze breaks open, and you can exit the maze from there and upon exiting the maze you win. There is also a timer, if you have not completed the game before the timer runs out, you lose the game.
+## Gameplay
 
-# Controls
-w - move character up
+### Objective
+- You play as the green-colored character. Avoid the red-colored imposter, reach and touch the imposter-colored button to eliminate the imposter, and navigate through the maze to exit.
 
-a - move character left  
+### Imposter Behavior
+- The imposter uses the Bellman-Ford shortest path algorithm to move towards you.
 
-s - move character down 
+### Buttons
+- **Imposter Button**: If you touch the imposter-colored button, the imposter dies. If the imposter touches you before you touch the button, you lose the game.
+- **Spawn Button**: Touching this button spawns 2 coins and 2 bombs.
 
-d - move character right
+### Scoring
+- **Collect a Coin**: +10 points
+- **Touch a Bomb**: -10 points
 
-q - quit the game
+### Maze and Timer
+- After touching the two buttons, a part of the maze breaks open, providing an exit.
+- **Exit the Maze**: Upon exiting, you win the game.
+- **Timer**: Complete the game before the timer runs out to avoid losing.
+
+## Controls
+- **W**: Move character up
+- **A**: Move character left
+- **S**: Move character down
+- **D**: Move character right
+- **Q**: Quit the game
